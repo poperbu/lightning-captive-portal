@@ -106,6 +106,9 @@ fasport 8888
 8-Once you have done your changes, you can restart nodogsplash and check if you can get wifi access by paying LN invoice.
 [Video Demo](https://twitter.com/poperbu/status/1091875913573322752)
 
+## tippin.me
+
+https://tippin.me/@poperbu
 
 
 
