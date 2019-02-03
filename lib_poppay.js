@@ -147,7 +147,7 @@ this.show_invoice=function(invoice,csrf,token_in,amt_in,redir_in,id_in,req){
 		//acabar.
 		reply +='<form action="/check_invoice" method="post">'
 		reply +='<input type="hidden" name="_csrf" value='+csrf+'>'
-		reply +='<input type="hidden" name="_game" value='+token_in+'>'
+		reply +='<input type="hidden" name="_token" value='+token_in+'>'
 		reply +='<input type="hidden" name="_redir" value='+redir_in+'>'
 		reply +='<input type="hidden" name="_amt" value='+amt_in+'>'
 		reply +='<input type="hidden" name="_id" value='+id_in+'>'
