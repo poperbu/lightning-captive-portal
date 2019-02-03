@@ -1,0 +1,19 @@
+{
+  "name": "lnwifi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lnwifi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.16.4",
+    "lightning-charge-client": "^0.1.10",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
+}
