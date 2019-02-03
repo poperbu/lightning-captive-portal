@@ -66,6 +66,45 @@ We need to edit /etc/nodogsplash/nodogsplash.conf . There are a lot of parameter
 
 Some changes I have done:
 
+-As I use a telegram bot as a wallet, so I opened telegram traffic for preauthenticated users. In this section we need to allow traffic (specific wallet ports , ip's, etc..) to allow the users to pay LN invoice. An other solution can be opening all traffic for a limited period of time, so the user has enough time to pay it.
+
+```
+FirewallRuleSet preauthenticated-users {
+
+#example: if we want allow lnd gRPC on port 10009 
+FirewallRule allow tcp port 10009 
+
+#example: if we want allow telegram ip's (my case)
+FirewallRule allow to 91.108.4.0/22
+FirewallRule allow to 91.108.56.0/22
+FirewallRule allow to 149.154.160.0/22
+FirewallRule allow to 149.154.164.0/22
+FirewallRule allow to 149.154.168.0/22
+FirewallRule allow to 149.154.172.0/22
+}
+```
+-Fas server port (lnwifi.js listen_port):
+```
+fasport 8888
+```
+-Fas remote ip: if you run fas in a external server, you need to uncomment it and indicate the fas remote ip (as I run it in the same machine, don't need to uncomment):
+```
+#fasremoteip X.X.X.X
+```
+-FAS secure: If you run de FAS in a remote machine, maybe will be easier to pass the nodogsplash token in clear text disabling this feature. My script manage the nodogsplash tokens with nodog_get_client and nodog_allow_client functions.
+```
+# Parameter: fas_secure_enabled
+# Default: 1
+#
+# If set to "1", authaction and the client token are not revealed and it is the responsibility
+# of the FAS to request the token from NDSCTL.
+# If set to "0", the client token is sent to the FAS in clear text in the query string of the
+# redirect along with authaction and redir.
+#
+#fas_secure_enabled 0
+```
+8-Once you have done your changes, you can restart nodogsplash and check if you can get wifi access by paying LN invoice.
+[Video Demo](https://twitter.com/poperbu/status/1091875913573322752)
 
 
 
