@@ -1,4 +1,3 @@
-//fer el mateix amb https://github.com/ElementsProject/lightning-charge-client-js
 
 var http = require("http");
 var express = require('express');
