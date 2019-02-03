@@ -15,7 +15,7 @@ This project only aims to be a PROOF Of CONCEPT. The idea is to implement Wi-Fi 
 
 -Forwarding Authentication Service (FAS) developed with [Node Js](https://nodejs.org/en/)
 
--Lightning Network: [Lightning-C](https://github.com/ElementsProject/lightning) node + [lightning-charge](https://github.com/ElementsProject/lightning-charge) (it can be done with [lnd](https://github.com/lightningnetwork/lnd), of course)
+-Lightning Network: [c-lightning](https://github.com/ElementsProject/lightning) node + [lightning-charge](https://github.com/ElementsProject/lightning-charge) (it can be done with [lnd](https://github.com/lightningnetwork/lnd), of course)
 
 NOTE: Any device that can run OpenWrt can run nodogsplash, so if the FAS is runing on external server it should be easy to adapt this solution for OpenWrt devices.
 
