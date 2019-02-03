@@ -47,7 +47,7 @@ const charged_token='your_charged_token'
 const listen_port=8888
 ```
 
-(optional)-You can edit html responses and price of connection by editing poppay.js.
+(optional)-You can edit html responses and price of connection by editing lib_poppay.js.
 
 6-Run the script:
 ```
