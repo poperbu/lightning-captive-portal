@@ -66,7 +66,7 @@ We need to edit /etc/nodogsplash/nodogsplash.conf . There are a lot of parameter
 
 Some changes I have done:
 
--As I use a telegram bot as a wallet, so I opened telegram traffic for preauthenticated users. In this section we need to allow traffic (specific wallet ports , ip's, etc..) to allow the users to pay LN invoice. An other solution can be opening all traffic for a limited period of time, so the user has enough time to pay it.
+-preauthenticated-users: In this section we need to allow traffic (specific wallet ports , ip's, etc..) to allow the users to pay LN invoice. As I use a telegram bot as a wallet, I opened telegram traffic for preauthenticated users. An other solution can be opening all traffic for a limited period of time, so the user has enough time to pay it.
 
 ```
 FirewallRuleSet preauthenticated-users {
