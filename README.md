@@ -3,7 +3,7 @@
 
 ## Description
 
-This project only aims to be a PROOF Of CONCEPT. The idea is to implement Wi-Fi access through a captive portal where payments with LightningNetwork serve as an authorization method. The system can be very improved and surely has some errors, I am not an expert programmer. I wanted to use open source technologies, and raspberry-pi hardware in such a way that anyone can try and improve this system at home. I repeat, the goal is not to develop a definitive system, but a very simple proof of concept.
+This project only aims to be a PROOF Of CONCEPT. The idea is to implement Wi-Fi access through a captive portal where payments with LightningNetwork serve as an authorization method. The system can be very improved and surely has some errors, I am NOT an expert programmer. All tools used are open source technologies, and raspberry-pi hardware in such a way that anyone can try and improve this system at home. I repeat, the goal is not to develop a definitive solution, but a very simple proof of concept.
 
 ## Elements used
 
@@ -74,6 +74,9 @@ FirewallRuleSet preauthenticated-users {
 #example: if we want allow lnd gRPC on port 10009 
 FirewallRule allow tcp port 10009 
 
+#example: if we want allow lnd RTC on port 3000 
+FirewallRule allow tcp port 10009 
+
 #example: if we want allow telegram ip's (my case)
 FirewallRule allow to 91.108.4.0/22
 FirewallRule allow to 91.108.56.0/22
@@ -104,7 +107,8 @@ fasport 8888
 #fas_secure_enabled 0
 ```
 8-Once you have done your changes, you can restart nodogsplash and check if you can get wifi access by paying LN invoice.
-[Video Demo](https://twitter.com/poperbu/status/1091875913573322752)
+
+[Video Demo1](https://twitter.com/poperbu/status/1091875913573322752)
 
 ## tippin.me
 
