@@ -75,7 +75,7 @@ FirewallRuleSet preauthenticated-users {
 FirewallRule allow tcp port 10009 
 
 #example: if we want allow lnd RTC on port 3000 
-FirewallRule allow tcp port 10009 
+FirewallRule allow tcp port 3000 
 
 #example: if we want allow telegram ip's (my case)
 FirewallRule allow to 91.108.4.0/22
