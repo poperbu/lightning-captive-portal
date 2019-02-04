@@ -29,7 +29,7 @@ lpoppay=require("./lib_poppay.js")
 var server = app.listen(listen_port, function () {
   var host = server.address().address
   var port = server.address().port
-  console.log("popmin.net  listening at %s:%s Port", host, port)
+  console.log("listening at %s:%s Port", host, port)
 });
 
 app.use(require('morgan')('dev'))
